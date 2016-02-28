@@ -108,7 +108,18 @@ abstract class Customer {
  */
 class Bronze_Customer extends Customer {
 
+	/**
+	 * Bronze customer credit deposit bonus rate
+	 *
+	 * @var int
+	 */
 	protected $deposit_bonus = 0;
+
+	/**
+	 * Bronze customer type short;
+	 *
+	 * @var string
+	 */
 	protected $type = 'B';
 
 }
@@ -120,7 +131,18 @@ class Bronze_Customer extends Customer {
  */
 class Silver_Customer extends Customer {
 
+	/**
+	 * Silver customer credit deposit bonus rate
+	 *
+	 * @var float
+	 */
 	protected $deposit_bonus = .05;
+
+	/**
+	 * Silver customer type short
+	 *
+	 * @var string
+	 */
 	protected $type = 'S';
 
 }
@@ -132,7 +154,17 @@ class Silver_Customer extends Customer {
  */
 class Gold_Customer extends Customer {
 
+	/**
+	 * Gold customer credit deposit bonus rate
+	 *
+	 * @var float
+	 */
 	protected $deposit_bonus = .1;
+
+	/**
+	 * Gold customer type short
+	 * @var string
+	 */
 	protected $type = 'G';
 
 }
@@ -210,6 +242,7 @@ class CustomerFactory {
 	}
 
 }
+
 
 echo '<pre>';
 try {
